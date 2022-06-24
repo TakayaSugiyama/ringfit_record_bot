@@ -34,9 +34,8 @@ type TwitterApiResult struct {
 
 var rule = regexp.MustCompile("[0-9]+")
 
-func fetchPhotoURL() string {
+func fetchPhotoURL(twUrl string) string {
 	godotenv.Load(".env")
-	var twUrl string = "https://twitter.com/tky_7201/status/1539739471054135296"
 	var twitttID = rule.FindAllStringSubmatch(twUrl, -1)[1][0]
 	var endpoint = "https://api.twitter.com/2/tweets?tweet.fields=attachments&expansions=attachments.media_keys&media.fields=url"
 	u, err := url.Parse(endpoint)
