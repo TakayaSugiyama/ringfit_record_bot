@@ -21,7 +21,6 @@ func GetIfttt(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "url is empty value")
 		return
 	}
-	fmt.Println(data.Url)
 	fmt.Println("request is valid")
 
 	var photoUrl string = fetchPhotoURL(data.Url)
