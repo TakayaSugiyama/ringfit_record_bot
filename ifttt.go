@@ -24,5 +24,6 @@ func GetIfttt(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("request is valid")
 
 	var photoUrl string = fetchPhotoURL(data.Url)
-	fmt.Println(photoUrl)
+	var excResult ExerciseResult = getExerciseResult(photoUrl)
+	fmt.Println(excResult)
 }

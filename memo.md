@@ -8,6 +8,10 @@ https://cloud.google.com/functions/docs/calling/http?hl=ja&cloudshell=false#func
 
 https://cloud.google.com/sdk/gcloud/reference/functions/deploy?hl=ja#--runtime
 
+#### 環境変数
+
+https://cloud.google.com/functions/docs/configuring/env-var?hl=ja#using_build_environment_variables
+
 ### Cloud Vision API (OCR)
 
 #### 画像内のテキストを検出(ラベリング)
